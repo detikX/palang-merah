@@ -1,10 +1,31 @@
 .ambulancex {
     padding: 0;
+    @keyframes banner2 {
+        0% {
+            transform: rotateY(180deg);
+            right: -270px;
+        }
+        50% {
+            transform: rotateY(180deg);
+            right: 100%;
+        }
+        51% {
+            transform: rotateY(0deg);
+            right: calc(100% + 270px);
+        }
+        100% {
+            transform: rotateY(0deg);
+            right: -270px;
+        }
+    }
     .img-sticky {
         width: 320px;
         height: auto;
         position: absolute;
         bottom: 20%;
+        animation: linear infinite;
+        animation-name: banner2;
+        animation-duration: 20s;
 
         @keyframes sirine {
             0%,
