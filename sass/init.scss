@@ -1,6 +1,6 @@
 // 003a70
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Ubuntu&family=Rubik&family=Paytone+One&family=Libre+Franklin:wght@400;900&family=Roboto+Slab&family=Titan+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Ubuntu&family=Rubik&family=Paytone+One&family=Source+Code+Pro:wght@400;900&family=Roboto+Slab&family=Mulish&display=swap");
 
 // $colorred: #560418;
 // $colorred: #7b2031; //jurno
@@ -133,7 +133,7 @@ section {
     p,
     li {
         font-size: 1.2rem;
-        color: #333;
+        color: #fff;
         @media screen and (max-width: 768px) {
             font-size: 1.2rem;
         }
@@ -240,9 +240,9 @@ body {
     height: 100%;
     // font-family: 'Outfit';
     // overflow-x: hidden;
-    p {
-        color: #3a6a4d;
-    }
+    // p {
+    //     color: #3a6a4d;
+    // }
     font-family: "Rubik" !important;
     @media screen and (max-width: 768px) {
         // overflow-x: hidden;

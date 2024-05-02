@@ -1,9 +1,16 @@
 .pembukaan {
+    min-height: auto;
     .hello {
         background: #dfa57b;
         p {
             // color: $colorred;
             color: black;
+            font-family: "Mulish";
+            font-size: 1.2rem;
+            text-align: center;
+            @media screen and (max-width: 768px) {
+                text-align: left;
+            }
         }
     }
 }
