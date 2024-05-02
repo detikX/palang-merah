@@ -1,10 +1,39 @@
 .ambulancex {
     padding: 0;
     .img-sticky {
-        width: 420px;
+        width: 320px;
         height: auto;
         position: absolute;
         bottom: 20%;
+
+        @keyframes sirine {
+            0%,
+            100% {
+                box-shadow: 2px 3px 12px 14px #590c10;
+            }
+            50% {
+                box-shadow: 2px 3px 12px 14px transparent;
+            }
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            left: 208px;
+            bottom: 80%;
+            width: 15px;
+            height: 15px;
+            background: transparent;
+            border-radius: 50%;
+            z-index: -1;
+            animation: sirine 1s linear infinite;
+            box-shadow: 2px 3px 12px 14px #590c10;
+            @media screen and (max-width: 768px) {
+                left: 112px;
+                bottom: 82%;
+                width: 8px;
+                height: 8px;
+            }
+        }
         @media screen and (max-width: 768px) {
             width: 180px;
         }
