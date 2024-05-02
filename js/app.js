@@ -5,7 +5,7 @@ $('.autoplay').slick({
     autoplaySpeed: 7000,
     fade: true,
     adaptiveHeight: true,
-    arrows: false
+    arrows: false,
 });
 
 var $slickElement = $('.autoplay');
