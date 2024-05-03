@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Ubuntu&family=Rubik&family=Paytone+One&family=Source+Code+Pro:wght@400;900&family=Roboto+Slab&family=Mulish&display=swap");
 
+@import 'init';
+@import 'pembukaan';
+@import 'data';
 @import 'banner';
+
 main, body {
     p {
         font-family: 'Rubik';
@@ -9,8 +13,62 @@ main, body {
 * {
     box-sizing: border-box;
   }
+
+  .data .l-quote {
+    width: 450px;
+    height: 300px;
+    @media screen and (max-width:768px) {
+        width: 100%;
+        padding: 12px;
+    }
+  }
+
+  .data .namanya {
+    font-size: 1rem;
+    width: 50%;
+    @media screen and (max-width:768px) {
+        left: -4px;
+        bottom: -95px;
+        width: 45%;
+    }
+  }
+
+  .data .quote {
+    &::after {
+        right: 55px;
+        @media screen and (max-width:768px) {
+            right: 12px;
+        }
+    }
+  }
+
+  .data .quotationx {
+    @media screen and (max-width:768px) {
+        height: 88vh;
+    }
+    .img {
+        right: initial;
+        left: 350px;
+        z-index: 3;
+        @media screen and (max-width:768px) {
+            right: -28px;
+            left: initial;
+        }
+    }
+    .autoplay {
+        p {
+            font-family: 'Source Code Pro';
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+            @media screen and (max-width:768px) {
+                font-size: 1rem;
+                line-height: 1.3rem;
+            }
+        }
+    }
+  }
   .company-timeline {
-      margin: 120px 0;
+    //   margin: 120px 0;
   
       &:before {
           width: 100%;
@@ -25,6 +83,7 @@ main, body {
         //   margin-right: auto;
         //   padding-left: 3.125rem;
         //   padding-right: 3.125rem;
+        // margin-top: 100px;
       }
       .timeline-heading {
           width: 100%;
@@ -41,7 +100,7 @@ main, body {
   
       &-list {
           position: sticky;
-          top: 0;
+          top: 100px;
           width: 30% !important;
           display: flex;
           flex-wrap: wrap;
@@ -60,7 +119,9 @@ main, body {
               left: 0;
               top: 0;
               width: 100%;
+              font-family: 'Source Code Pro';
               display: block;
+              color: white;
               font-size: 80px;
               font-weight: 300;
               line-height: 1;
