@@ -133,7 +133,7 @@ main, body {
               padding-right: 55px;
               opacity: 0;
               @media screen and (max-width:768px) {
-                font-size: 24px;
+                font-size: 30px;
               }
               @for $i from 1 to 5 {
                   .date span:nth-child(#{$i}) { transition-delay: $i * 0.05s; }
