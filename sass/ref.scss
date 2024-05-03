@@ -20,6 +20,7 @@ main, body {
     @media screen and (max-width:768px) {
         width: 100%;
         padding: 12px;
+        height: auto;
     }
   }
 
@@ -29,6 +30,7 @@ main, body {
     @media screen and (max-width:768px) {
         left: -4px;
         bottom: -95px;
+        font-size: .8rem;
         width: 45%;
     }
   }
@@ -44,7 +46,10 @@ main, body {
 
   .data .quotationx {
     @media screen and (max-width:768px) {
-        height: 88vh;
+        height: 500px;
+    }
+    @media screen and (max-width:400px) {
+        height: 550px;
     }
     .img {
         right: initial;
