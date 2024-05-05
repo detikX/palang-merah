@@ -1,3 +1,10 @@
+$(document).ready(function () {
+  AOS.init()
+})
+
+$(".awanx").attr({ "data-aos": "fade-up", "data-aos-delay": "300", "data-aos-duration": "2000", "data-aos-offset": "10", "data-aos-easing": "linear" });
+
+
 var $ = jQuery.noConflict();
 window.onload = () => {
   if ($(".company-timeline-year").length) {
@@ -41,3 +48,8 @@ window.onscroll = (e) => {
     }
   });
 };
+
+
+
+
+$('.logo-pmi').slick();
