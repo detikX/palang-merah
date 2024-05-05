@@ -12,7 +12,7 @@
             position: absolute;
             right: 0;
             bottom: 0;
-            @media screen and (max-width:768px) {
+            @media screen and (max-width: 768px) {
                 width: 200px;
                 height: auto;
                 position: absolute;
@@ -59,16 +59,16 @@
         position: absolute;
         bottom: -48px;
         width: 46%;
-        font-family: 'Source Code Pro';
+        font-family: "Source Code Pro";
         /* left: 24px; */
         font-size: 13px;
         color: white;
-        @media screen and (max-width:768px) {
+        @media screen and (max-width: 768px) {
             position: absolute;
             bottom: -45px;
             width: 50%;
-            font-family: 'Source Code Pro';
-            font-size: .8rem;
+            font-family: "Source Code Pro";
+            font-size: 0.8rem;
             color: white;
             left: 0px;
         }
@@ -155,10 +155,9 @@
         position: relative;
         height: 450px;
         display: block;
-        @media screen and (max-width:768px) {
+        @media screen and (max-width: 768px) {
             height: 255px;
         }
-
     }
 
     .imagex {
@@ -169,6 +168,15 @@
         bottom: 0;
         left: 0;
         right: 0;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 40%;
+            background: linear-gradient(to top, #ab3138, transparent);
+        }
         @media screen and (max-width: 768px) {
             // margin: 16px 0 16px -83px;
             width: 130%;
@@ -187,7 +195,7 @@
         right: 0;
         width: 120px;
         height: auto;
-        @media screen and (max-width:768px) {
+        @media screen and (max-width: 768px) {
             bottom: 0;
             width: 80px;
         }
@@ -201,7 +209,7 @@
     .nobel {
         margin: 16px 0;
         &__title {
-            font-family: 'Source Code Pro';
+            font-family: "Source Code Pro";
             vertical-align: top;
             font-size: 2rem;
             color: #fad083;
@@ -217,11 +225,10 @@
             //     background: red;
             //     z-index: -1;
             // }
-            @media screen and (max-width:768px) {
+            @media screen and (max-width: 768px) {
                 margin-bottom: 8px;
                 line-height: 1.5rem;
                 font-size: 1.3rem;
-                
             }
         }
         &__data {
@@ -234,7 +241,7 @@
             width: 240px;
             height: 240px;
             display: inline-block;
-            @media screen and (max-width:768px){
+            @media screen and (max-width: 768px) {
                 width: 125px;
                 height: 125px;
             }
