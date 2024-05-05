@@ -23,6 +23,11 @@ body {
             left: -8px;
         }
     }
+    .nobel__data {
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
     .imagex {
         @media screen and (max-width: 768px) {
             width: 200%;
