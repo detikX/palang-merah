@@ -52,4 +52,13 @@ window.onscroll = (e) => {
 
 
 
-$('.logo-pmi').slick();
+$('.logo-pmi').slick({
+  // slidesToShow: 3,
+  // slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 2000,
+  // fade: true,
+  speed: 500,
+  cssEase: 'cubic-bezier(0.600, -0.280, 0.735, 0.045)',
+  // cssEase: 'linear'
+});
