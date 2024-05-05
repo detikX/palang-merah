@@ -26,7 +26,7 @@ window.onscroll = (e) => {
       win_scroll < this_off + $(".company-timeline-year").height()
     ) {
 
-      $this.addClass("active");
+      $this.addClass("active").siblings().removeClass('active');
       var curr_index = $this.index();
       // console.log(curr_index);
       $(".timeline-date")
