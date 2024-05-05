@@ -4,6 +4,7 @@
 @import "pembukaan";
 @import "data";
 @import "banner";
+@import "typed";
 
 main,
 body {
@@ -153,7 +154,7 @@ body {
         height: 500px;
     }
     @media screen and (max-width: 400px) {
-        height: 550px;
+        height: 570px;
     }
     .img {
         right: initial;
@@ -426,5 +427,43 @@ body {
         width: 100%;
         height: 100%;
         object-fit: contain;
+    }
+}
+
+.input-wrapper {
+    display: block;
+    font-family: "Source Code Pro";
+    // font-size: 125%;
+    width: 100%;
+    color: black;
+    > input,
+    > .placeholder {
+        display: block;
+        appearance: none;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+    }
+    > .placeholder {
+        pointer-events: none;
+        @include typed(
+            "(Mereka) saling menginjak-injak, membunuh satu sama lain di atas tumpukan mayat yang berdarah, menumbangkan musuh dengan popor senapan, meremukkan tengkorak, mengoyak perut dengan pedang dan bayonet.",
+            "Tidak ada seperempat yang diberikan; itu adalah penjagalan belaka; pertarungan antara binatang buas, yang gila karena darah dan amarah.",
+            "Bahkan yang terluka pun berjuang sampai nafas terakhir. Ketika mereka tidak punya senjata lagi, mereka mencengkeram leher musuhnya dan mencabik-cabiknya dengan giginya.",
+            5,
+            (
+                caret-width: 2px,
+                caret-space: 2px
+            )
+        );
+    }
+    > input {
+        &:focus,
+        &:active {
+            + .placeholder {
+                display: none;
+            }
+        }
     }
 }
