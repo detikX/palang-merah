@@ -184,6 +184,7 @@ body {
 .company-timeline {
     //   margin: 120px 0;
     .sticky-mode {
+        min-height: 0vh;
         @media screen and (max-width: 768px) {
             min-height: 35vh;
             // top: 72px;
@@ -504,14 +505,16 @@ body {
 
 .world-map {
     position: absolute;
-    left: 50%;
+    left: -16%;
     opacity: 0.04;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 10%;
+    transform: translate(0%, 16%);
     width: 70%;
     height: auto;
     @media screen and (max-width: 768px) {
         width: 100%;
+        top: 50%;
+        left: 50%;
         transform: translate(-50%, 0%);
     }
     img {
