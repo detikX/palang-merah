@@ -183,7 +183,19 @@ body {
 }
 .company-timeline {
     //   margin: 120px 0;
+    .sticky-mode {
+        @media screen and (max-width: 768px) {
+            min-height: 35vh;
+            // top: 72px;
+        }
+    }
 
+    .world-map {
+        // @media screen and (max-width: 768px) {
+        //     position: absolute;
+        //     // top: 30%;
+        // }
+    }
     &:before {
         width: 100%;
         height: 100vw;
@@ -378,7 +390,7 @@ body {
         }
 
         p {
-            line-height: 1.75;
+            // line-height: 1.75;
         }
     }
 }
@@ -442,12 +454,16 @@ body {
     color: black;
     > input,
     > .placeholder {
+        font-size: 1.2rem;
         display: block;
         appearance: none;
         width: 100%;
         height: 100%;
         background-color: transparent;
         border: none;
+        @media screen and (max-width: 768px) {
+            font-size: 16px;
+        }
     }
     > .placeholder {
         pointer-events: none;
@@ -477,8 +493,27 @@ body {
     width: 150px;
     height: auto;
     padding: 8px;
-
+    margin-bottom: 16px;
     background-color: white;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.world-map {
+    position: absolute;
+    left: 50%;
+    opacity: 0.04;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: auto;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        transform: translate(-50%, 0%);
+    }
     img {
         width: 100%;
         height: 100%;
