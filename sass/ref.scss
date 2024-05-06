@@ -125,7 +125,10 @@ body {
     @media screen and (max-width: 768px) {
         width: 100%;
         padding: 12px;
-        height: auto;
+        height: 50vh;
+    }
+    @media screen and (max-width: 400px) {
+        height: 55vh;
     }
 }
 
@@ -151,10 +154,11 @@ body {
 
 .data .quotationx {
     @media screen and (max-width: 768px) {
-        height: 500px;
+        height: 80vh;
     }
     @media screen and (max-width: 400px) {
-        height: 570px;
+        // height: 570px;
+        height: 83vh;
     }
     .img {
         right: initial;
@@ -451,7 +455,8 @@ body {
             "(Mereka) saling menginjak-injak, membunuh satu sama lain di atas tumpukan mayat yang berdarah, menumbangkan musuh dengan popor senapan, meremukkan tengkorak, mengoyak perut dengan pedang dan bayonet.",
             "Tidak ada seperempat yang diberikan; itu adalah penjagalan belaka; pertarungan antara binatang buas, yang gila karena darah dan amarah.",
             "Bahkan yang terluka pun berjuang sampai nafas terakhir. Ketika mereka tidak punya senjata lagi, mereka mencengkeram leher musuhnya dan mencabik-cabiknya dengan giginya.",
-            5,
+            // 1.5,
+            (type: 0.05, delete: 0.02, pause-deleted: 0.07),
             (
                 caret-width: 2px,
                 caret-space: 2px

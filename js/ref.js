@@ -4,6 +4,8 @@ $(document).ready(function () {
 
 $(".awanx").attr({ "data-aos": "fade-up", "data-aos-delay": "300", "data-aos-duration": "2000", "data-aos-offset": "10", "data-aos-easing": "linear" });
 
+$(".perawat").attr({ "data-aos": "fade-up", "data-aos-delay": "300", "data-aos-duration": "800", "data-aos-offset": "10", "data-aos-easing": "linear" });
+
 
 var $ = jQuery.noConflict();
 window.onload = () => {
