@@ -4,7 +4,7 @@ $(document).ready(function () {
 
 $(".quotationx").attr({ "data-aos": "fade-in", "data-aos-delay": "2000", "data-aos-duration": "800", "data-aos-easing": "linear" });
 
-$(".perawat").attr({ "data-aos": "fade-up", "data-aos-delay": "300", "data-aos-duration": "800", "data-aos-offset": "10", "data-aos-easing": "linear" });
+$(".perawat").attr({ "data-aos": "fade-right", "data-aos-delay": "300", "data-aos-duration": "800", "data-aos-offset": "10", "data-aos-easing": "linear" });
 
 
 var $ = jQuery.noConflict();
@@ -62,3 +62,49 @@ $('.logo-pmi').slick({
   cssEase: 'cubic-bezier(0.600, -0.280, 0.735, 0.045)',
   // cssEase: 'linear'
 });
+
+
+
+
+
+const pauseVar = "fa-pause-circle";
+const playVar = "fa-play-circle";
+
+const btns = document.querySelectorAll(".all");
+
+function onChange(event) {
+  const buttonElement = event.currentTarget;
+
+  const isPlayButton = buttonElement.classList.contains(playVar);
+
+  if (isPlayButton) {
+    buttonElement.classList.remove(playVar);
+    buttonElement.classList.add(pauseVar);
+    $("#play-button").removeClass("animate__infinite");
+    $("#myAudio").get(0).play();
+  } else {
+    buttonElement.classList.remove(pauseVar);
+    buttonElement.classList.add(playVar);
+    $("#play-button").addClass("animate__infinite");
+    $("#myAudio").get(0).pause();
+  }
+
+  setTimeout(() => {
+    buttonElement.classList.remove(pauseVar);
+    buttonElement.classList.add(playVar);
+    $("#play-button").addClass("animate__infinite");
+    $("#myAudio").get(0).pause();
+  }, 12000);
+
+  // You can also use .toggle function on classList as mentioned by the person in other answer
+}
+
+// query selector all returns a list of nodes, therefore we need to iterate over it and attach an event listener to each button seperatly
+btns.forEach((btn) => {
+  btn.addEventListener("click", onChange);
+});
+
+
+setTimeout(() => {
+  $("#play-button").click()
+}, 500);

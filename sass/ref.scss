@@ -526,3 +526,13 @@ body {
         object-fit: contain;
     }
 }
+
+#play-button {
+    position: absolute;
+    cursor: pointer;
+    z-index: 19;
+    i {
+        font-size: 32px;
+        color: white;
+    }
+}
