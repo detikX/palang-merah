@@ -45,9 +45,7 @@ window.onscroll = (e) => {
         .removeClass("animate");
     }
 
-    if (win_scroll == this_off + $(".company-timeline-year").height()) {
-      console.log('dedi');
-    }
+
   });
 };
 
