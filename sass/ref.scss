@@ -505,17 +505,17 @@ body {
 
 .world-map {
     position: absolute;
-    left: -16%;
-    opacity: 0.04;
-    top: 10%;
-    transform: translate(0%, 16%);
+    left: 50%;
+    opacity: 0.05;
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 70%;
     height: auto;
     @media screen and (max-width: 768px) {
         width: 100%;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, 0%);
+        transform: translate(-50%, -50%);
     }
     img {
         width: 100%;
