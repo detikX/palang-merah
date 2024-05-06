@@ -1,5 +1,6 @@
 .sumber {
     min-height: auto;
+    padding: 16px 0;
     h3 {
         color: white;
         font-size: 1.2rem;
@@ -7,6 +8,10 @@
     li {
         font-size: 1rem;
         font-family: "Source Code Pro";
+    }
+    ul {
+        margin: 0;
+        padding: 0 16px;
     }
 }
 
