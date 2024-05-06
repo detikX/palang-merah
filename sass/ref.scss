@@ -72,6 +72,9 @@ body {
         .desc {
             padding: 8px;
             // margin: 0;
+            @media screen and (max-width: 768px) {
+                padding: 8px 16px;
+            }
             .title {
                 font-family: "Source Code Pro";
                 font-size: 1.5rem;
