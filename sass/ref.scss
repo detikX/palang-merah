@@ -1,87 +1,216 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Ubuntu&family=Rubik&family=Paytone+One&family=Source+Code+Pro:wght@400;900&family=Roboto+Slab&family=Mulish&display=swap");
 
-@import 'init';
-@import 'pembukaan';
-@import 'data';
-@import 'banner';
+@import "init";
+@import "pembukaan";
+@import "data";
+@import "banner";
+@import "typed";
 
-main, body {
+main,
+body {
     p {
-        font-family: 'Rubik';
+        font-family: "Rubik";
     }
 }
 * {
     box-sizing: border-box;
-  }
+}
 
-  .data .l-quote {
+.logo-pmi {
+    .hello {
+        // padding: 16px 16px 100px;
+        height: 65vh;
+    }
+
+    .slick-prev,
+    .slick-next {
+        top: 85%;
+    }
+
+    .slick-prev {
+        left: 15% !important;
+        // &::before {
+        //     content: "Sebelumnya" !important;
+        // }
+    }
+
+    .slick-next {
+        right: 15% !important;
+        // &::before {
+        //     content: "Sebelumnya" !important;
+        // }
+    }
+}
+
+.data {
+    .perawat {
+        @media screen and (max-width: 768px) {
+            bottom: 0;
+            width: 66px;
+            left: -8px;
+        }
+    }
+    .logo-pm {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        // box-shadow: 2px 3px 4px 3px #fff;
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+        .imgx {
+            display: block;
+            width: 150px;
+            height: auto;
+            margin: 0 auto;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .desc {
+            padding: 8px;
+            // margin: 0;
+            @media screen and (max-width: 768px) {
+                padding: 8px 16px;
+            }
+            .title {
+                font-family: "Source Code Pro";
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: $colorred;
+                text-align: center;
+                margin: 4px 0 16px;
+            }
+            p {
+                text-align: left;
+                @media screen and (max-width: 768px) {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .nobel__data {
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
+    .imagex {
+        @media screen and (max-width: 768px) {
+            width: 200%;
+            margin: 0 auto;
+        }
+    }
+    .awanx {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 100%;
+        @media screen and (max-width: 768px) {
+            width: 200%;
+            transform: initial;
+            left: 0;
+            top: 5%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+.data .l-quote {
     width: 450px;
     height: 300px;
-    @media screen and (max-width:768px) {
+    @media screen and (max-width: 768px) {
         width: 100%;
         padding: 12px;
-        height: auto;
+        height: 50vh;
     }
-  }
+    @media screen and (max-width: 400px) {
+        height: 55vh;
+    }
+}
 
-  .data .namanya {
+.data .namanya {
     font-size: 1rem;
     width: 50%;
-    @media screen and (max-width:768px) {
+    @media screen and (max-width: 768px) {
         left: -4px;
         bottom: -95px;
-        font-size: .8rem;
+        font-size: 0.8rem;
         width: 45%;
     }
-  }
+}
 
-  .data .quote {
+.data .quote {
     &::after {
         right: 55px;
-        @media screen and (max-width:768px) {
+        @media screen and (max-width: 768px) {
             right: 12px;
         }
     }
-  }
+}
 
-  .data .quotationx {
-    @media screen and (max-width:768px) {
-        height: 500px;
+.data .quotationx {
+    @media screen and (max-width: 768px) {
+        height: 80vh;
     }
-    @media screen and (max-width:400px) {
-        height: 550px;
+    @media screen and (max-width: 400px) {
+        // height: 570px;
+        height: 83vh;
     }
     .img {
         right: initial;
         left: 350px;
         z-index: 3;
-        @media screen and (max-width:768px) {
+        @media screen and (max-width: 768px) {
             right: -28px;
             left: initial;
         }
     }
     .autoplay {
         p {
-            font-family: 'Source Code Pro';
+            font-family: "Source Code Pro";
             font-size: 1.5rem;
             line-height: 1.8rem;
-            @media screen and (max-width:768px) {
+            @media screen and (max-width: 768px) {
                 font-size: 1rem;
                 line-height: 1.3rem;
             }
         }
     }
-  }
-  .company-timeline {
+}
+.company-timeline {
     //   margin: 120px 0;
-  
-      &:before {
-          width: 100%;
-          height: 100vw;
-          content: "";
-          display: none;
-      }
-      .container {
+
+    ul li {
+        margin: 0 0 10px 24px;
+    }
+    .sticky-mode {
+        min-height: 0vh;
+        @media screen and (max-width: 768px) {
+            min-height: 35vh;
+            // top: 72px;
+        }
+    }
+
+    .world-map {
+        // @media screen and (max-width: 768px) {
+        //     position: absolute;
+        //     // top: 30%;
+        // }
+    }
+    &:before {
+        width: 100%;
+        height: 100vw;
+        content: "";
+        display: none;
+    }
+    .container {
         //   max-width: 78.5rem;
         //   width: 100%;
         //   margin-left: auto;
@@ -89,183 +218,327 @@ main, body {
         //   padding-left: 3.125rem;
         //   padding-right: 3.125rem;
         // margin-top: 100px;
-      }
-      .timeline-heading {
-          width: 100%;
-          max-width: 100%;
-          margin-bottom: 0;
-          margin-bottom: 108px;
-      }
-  
-      &-wrapper {
-          display: flex;
-          flex-wrap: wrap;
-          align-items: flex-start;
-      }
-  
-      &-list {
-          position: sticky;
-          top: 100px;
-          width: 30% !important;
-          display: flex;
-          flex-wrap: wrap;
-  
-          .company-timeline-year {
-              position: relative;
-              width: 254px;
-              height: 80px;
-              margin-left: auto;
-              overflow: hidden;
-              transform: translateX(8px);
-          }
-  
-          .timeline-date {
-              position: absolute;
-              left: 0;
-              top: 0;
-              width: 100%;
-              font-family: 'Source Code Pro';
-              display: block;
-              color: white;
-              font-size: 80px;
-              font-weight: 300;
-              line-height: 1;
-              padding-right: 55px;
-              opacity: 0;
-              @media screen and (max-width:768px) {
-                font-size: 30px;
-              }
-              @for $i from 1 to 5 {
-                  .date span:nth-child(#{$i}) { transition-delay: $i * 0.05s; }
-              }
-              .date {
-                  display: flex;
-                  span {
-                      transform: translateY(100%);
-                      transition: 0.2s;
-                  }
-              }
-              &.animate {
-                  opacity: 1;
-                  .date {
-                      span {
-                          transform: translateY(0);
-                      }
-                  }   
-              }
-          }
-  
-          .circle {
-              position: absolute;
-              right: 0;
-              top: 50%;
-              transform: translateY(-50%);
-              width: 16px;
-              height: 16px;
-              border: 1px solid #F80964;
-              border-radius: 16px;
-              background-color: #fff;
-  
-              &:before {
-                  position: absolute;
-                  left: 50%;
-                  top: 50%;
-                  transform: translate(-50%, -50%);
-                  border-radius: 6px;
-                  width: 6px;
-                  height: 6px;
-                  background-color: #F80964;
-                  content: "";
-              }
-          }
-      }
-  
-      &-slider {
-          width: 70%;
-          margin-left: auto;
-          margin-top: 63px;
-          padding: 16px;
+    }
+    .timeline-heading {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 0;
+        margin-bottom: 108px;
+    }
+
+    &-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    &-list {
+        position: sticky;
+        top: 100px;
+        width: 30% !important;
+        display: flex;
+        flex-wrap: wrap;
+
+        .company-timeline-year {
+            position: relative;
+            width: 254px;
+            height: 80px;
+            margin-left: auto;
+            overflow: hidden;
+            transform: translateX(8px);
+        }
+
+        .timeline-date {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            font-family: "Rubik";
+            display: block;
+            color: white;
+            font-size: 80px;
+            font-weight: 300;
+            line-height: 1;
+            padding-right: 55px;
+            opacity: 0;
+            @media screen and (max-width: 768px) {
+                font-size: 32px;
+            }
+            @for $i from 1 to 5 {
+                .date span:nth-child(#{$i}) {
+                    transition-delay: $i * 0.05s;
+                }
+            }
+            .date {
+                display: flex;
+                span {
+                    transform: translateY(100%);
+                    transition: 0.2s;
+                }
+            }
+            &.animate {
+                opacity: 1;
+                .date {
+                    span {
+                        transform: translateY(0);
+                    }
+                }
+            }
+        }
+
+        .circle {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 16px;
+            height: 16px;
+            border: 1px solid #fff;
+            border-radius: 16px;
+            // background-color: #f80964;
+            background: $colorred;
+
+            &:before {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 6px;
+                width: 6px;
+                height: 6px;
+                // background-color: #f80964;
+                background-color: $colorred;
+                content: "";
+            }
+        }
+    }
+
+    &-slider {
+        width: 70%;
+        margin-left: auto;
+        margin-top: 63px;
+        padding: 16px;
         //   padding-left: 75px;
         //   padding-top: 110px;
-          border-left: 1px solid #C2D7DA;
-          overflow: visible;
-  
-          .slick-list {
-              overflow: visible !important;
-          }
-  
-          .slick-track {
-              display: block;
-          }
-      }
-  
-      &-block {
-          position: relative;
-          display: block;
-          margin-top: 80px;
-          padding-top: 26px;
-  
-          &:first-child {
-              margin-top: 0;
-              padding-top: 0;
-          }
-  
-          .timeline-date {
-              font-size: 80px;
-              font-weight: 300;
-              line-height: 1;
-              padding-right: 55px;
-              display: none;
-          }
-  
-          &.has-media {
-              padding-top: 0;
-  
-              .circle {
-                  top: 32px;
-              }
-          }
-  
-          &:first-child {
-              .circle {
-                  display: none;
-              }
-          }
-  
-          .circle {
-              position: absolute;
-              left: -25px;
-              top: 32px;
-              width: 16px;
-              height: 16px;
-              border: 1px solid #F80964;
-              border-radius: 16px;
-              background-color: #fff;
-  
-              &:before {
-                  position: absolute;
-                  left: 50%;
-                  top: 50%;
-                  transform: translate(-50%, -50%);
-                  border-radius: 6px;
-                  width: 6px;
-                  height: 6px;
-                  background-color: #F80964;
-                  content: "";
-              }
-          }
-  
-          .image-block {
-              margin-bottom: 30px;
-          }
-  
-          h4 {
-              margin-bottom: 10px;
-              margin-top: 0;
-          }
-  
-          p {
-              line-height: 1.75;
-          }
-      }
-  }
+        border-left: 1px solid #c2d7da;
+        overflow: visible;
+
+        .slick-list {
+            overflow: visible !important;
+        }
+
+        .slick-track {
+            display: block;
+        }
+    }
+
+    &-block {
+        position: relative;
+        display: block;
+        margin-top: 80px;
+        padding-top: 26px;
+
+        &:first-child {
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+        .timeline-date {
+            font-size: 80px;
+            font-weight: 300;
+            line-height: 1;
+            padding-right: 55px;
+            display: none;
+        }
+
+        &.has-media {
+            padding-top: 0;
+
+            .circle {
+                top: 32px;
+            }
+        }
+
+        &:first-child {
+            .circle {
+                display: none;
+            }
+        }
+
+        .circle {
+            position: absolute;
+            left: -25px;
+            top: 32px;
+            width: 16px;
+            height: 16px;
+            border: 1px solid #f80964;
+            border-radius: 16px;
+            background-color: #fff;
+
+            &:before {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 6px;
+                width: 6px;
+                height: 6px;
+                background-color: #f80964;
+                content: "";
+            }
+        }
+
+        .image-block {
+            margin-bottom: 30px;
+        }
+
+        h4 {
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
+
+        p {
+            // line-height: 1.75;
+        }
+    }
+}
+@keyframes ekg {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        stroke-dashoffset: 2000;
+    }
+    99% {
+        opacity: 0;
+        stroke-dashoffset: 3000;
+    }
+    100% {
+        stroke-dashoffset: 1000;
+    }
+}
+
+.ekg {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: miter;
+    opacity: 0;
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 1000;
+    animation: ekg 4.5s linear forwards infinite;
+}
+
+.detakx {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10%;
+    // z-index: 20;
+    width: 100%;
+    height: auto;
+    @media screen and (max-width: 768px) {
+        top: 25%;
+    }
+    svg {
+        width: 100%;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.input-wrapper {
+    display: block;
+    font-family: "Source Code Pro";
+    // font-size: 125%;
+    width: 100%;
+    color: black;
+    > input,
+    > .placeholder {
+        font-size: 1.2rem;
+        display: block;
+        appearance: none;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        @media screen and (max-width: 768px) {
+            font-size: 16px;
+        }
+    }
+    > .placeholder {
+        pointer-events: none;
+        @include typed(
+            "(Mereka) saling menginjak-injak, membunuh satu sama lain di atas tumpukan mayat yang berdarah, menumbangkan musuh dengan popor senapan, meremukkan tengkorak, mengoyak perut dengan pedang dan bayonet.",
+            "Tidak ada seperempat yang diberikan; itu adalah penjagalan belaka; pertarungan antara binatang buas, yang gila karena darah dan amarah.",
+            "Bahkan yang terluka pun berjuang sampai nafas terakhir. Ketika mereka tidak punya senjata lagi, mereka mencengkeram leher musuhnya dan mencabik-cabiknya dengan giginya.",
+            // 1.5,
+            (type: 0.05, delete: 0.02, pause-deleted: 0.1),
+            (
+                caret-width: 2px,
+                caret-space: 2px
+            )
+        );
+    }
+    > input {
+        &:focus,
+        &:active {
+            + .placeholder {
+                display: none;
+            }
+        }
+    }
+}
+
+.logo-jenewa {
+    width: 150px;
+    height: auto;
+    padding: 8px;
+    margin-bottom: 16px;
+    background-color: white;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.world-map {
+    position: absolute;
+    left: 50%;
+    opacity: 0.05;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: auto;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+#play-button {
+    position: absolute;
+    cursor: pointer;
+    z-index: 19;
+    i {
+        font-size: 32px;
+        color: white;
+    }
+}
+
+@import "sumber";
