@@ -6,27 +6,6 @@
 // $colorred: #7b2031; //jurno
 $colorred: #ab3138;
 
-.preload {
-    // font-family: "Noto Serif JP", sans-serif;
-    font-family: "Roboto Slab";
-    // color: rgb(58, 58, 58);
-    // font-family: "Ubuntu";
-    color: #333;
-    border-bottom: 1px dashed #bbb;
-    text-align: center;
-    // margin-bottom: 32px;
-    // padding-bottom: 16px;
-    @media screen and (max-width: 768px) {
-        text-align: left;
-    }
-    p {
-        font-size: 1.2rem;
-        margin-bottom: 16px;
-        @media screen and (max-width: 768px) {
-            font-size: 1rem;
-        }
-    }
-}
 .labels {
     // background: $colorred;
     background: #840020;
@@ -49,7 +28,7 @@ $colorred: #ab3138;
     right: 0;
     z-index: 999999;
     // filter: blur(8px);
-    background: rgba(white, 1);
+    background: rgba($colorred, 1);
     // background: linear-gradient(to bottom, rgba(black, 0.75), black);
     // backdrop-filter: blur(12px);
     .waiting {

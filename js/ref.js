@@ -1,10 +1,18 @@
 $(document).ready(function () {
-  AOS.init()
+  setTimeout(() => {
+    $(".preloader").fadeOut(1000);
+    $(".preloader").remove();
+    // $("html, body").animate({ scrollTop: 0 }, 10);
+    // window.scrollTo(0, 0);
+
+  }, 2000);
+  AOS.init();
+  new WOW().init();
 })
 
 $(".quotationx").attr({ "data-aos": "fade-in", "data-aos-delay": "1500", "data-aos-duration": "800", "data-aos-easing": "linear" });
 
-$(".wrap-detikx p, .containerx p, .containerx .imagex, .containerx .logo-jenewa").attr({ "data-aos": "fade-in", "data-aos-delay": "200", "data-aos-duration": "500",  "data-aos-offset": "10","data-aos-easing": "linear" });
+$(".wrap-detikx p, .containerx p, .containerx .imagex, .containerx .logo-jenewa").attr({ "data-aos": "fade-in", "data-aos-delay": "200", "data-aos-duration": "500", "data-aos-offset": "10", "data-aos-easing": "linear" });
 
 $(".perawat").attr({ "data-aos": "fade-right", "data-aos-delay": "300", "data-aos-duration": "800", "data-aos-offset": "10", "data-aos-easing": "linear" });
 
