@@ -335,7 +335,7 @@ section {
 }
 .share_icon {
     color: white !important;
-    a {
+    >a {
         padding: 2px 0 !important;
         @media screen and (max-width:768px) {
             padding: 0 !important;
