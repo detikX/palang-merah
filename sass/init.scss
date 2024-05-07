@@ -321,16 +321,15 @@ section {
 //titip animasi
 .dashboard-content {
     display: none;
-    // color: red;
 }
 
 #nav.no_index,
 #share {
-    z-index: 21;
+    z-index: 19;
 }
 
 .footer {
-    z-index: 22;
+    z-index: 19;
 }
 
 .share_icon > a i {
@@ -354,7 +353,7 @@ section {
     }
 }
 .bg-blues {
-    background: #fafafa !important;
+    background: $colorred !important;
 }
 
 .share_icon > a {
