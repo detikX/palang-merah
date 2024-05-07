@@ -327,11 +327,15 @@ section {
 #share {
     z-index: 19 !important;
 }
-
+#nav.dark {
+    background: #7c181f !important;
+}
 .footer {
     z-index: 19;
 }
-
+.share_icon {
+    color: white !important;
+}
 .share_icon > a i {
     font-size: 25px !important;
     line-height: initial !important;
