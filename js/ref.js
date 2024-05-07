@@ -2,7 +2,9 @@ $(document).ready(function () {
   AOS.init()
 })
 
-$(".quotationx").attr({ "data-aos": "fade-in", "data-aos-delay": "2000", "data-aos-duration": "800", "data-aos-easing": "linear" });
+$(".quotationx").attr({ "data-aos": "fade-in", "data-aos-delay": "1500", "data-aos-duration": "800", "data-aos-easing": "linear" });
+
+$(".wrap-detikx p").attr({ "data-aos": "fade-in", "data-aos-delay": "200", "data-aos-duration": "500", "data-aos-easing": "linear" });
 
 $(".perawat").attr({ "data-aos": "fade-right", "data-aos-delay": "300", "data-aos-duration": "800", "data-aos-offset": "10", "data-aos-easing": "linear" });
 

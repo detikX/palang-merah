@@ -335,6 +335,14 @@ section {
 }
 .share_icon {
     color: white !important;
+    a {
+        padding: 2px 0 !important;
+        @media screen and (max-width:768px) {
+            padding: 0 !important;
+            width: 28px;
+            height: 28px;
+        }
+    }
 }
 .share_icon > a i {
     font-size: 25px !important;
